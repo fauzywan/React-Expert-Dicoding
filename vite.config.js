@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   test: {
+    host: true,
     globals: true,
     environment: 'jsdom', // Ini kunci biar "document is not defined" hilang
   },
