@@ -25,7 +25,7 @@ describe('LoginInput component', () => {
     const passwordInput =
       await screen.getByPlaceholderText('Masukkan password');
 
-    await userEvent.type(passwordInput, 'rahasi123');
+    await userEvent.type(passwordInput, 'rahasia123');
     expect(passwordInput).toHaveValue('rahasia123');
   });
 
