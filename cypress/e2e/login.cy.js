@@ -21,7 +21,7 @@ describe('Login spec', () => {
 
   it('should display homepage when email and password are correct', () => {
     cy.get('input[placeholder="nama@email.com"]').type('463@gmail.com');
-    cy.get('input[placeholder="Masukkan password"]').type('111111   ');
+    cy.get('input[placeholder="Masukkan password"]').type('111111');
     cy.get('button').contains('Masuk').click();
 
     cy.get('nav').should('be.visible');
